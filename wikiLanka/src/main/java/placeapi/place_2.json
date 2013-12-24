@@ -1,0 +1,428 @@
+{
+   "debug_info" : [],
+   "html_attributions" : [],
+   "next_page_token" : "CmRRAAAAxS3Ltrk_CxHmPf-iyTJZaDirHE6qcQjDTprROvNLsff7I99cBWe1u2PEagKQ4SOsEWui2IkVHv5q2vfugUe-HH5AQEG9bk7SVQGX-orqQ_LoCO9ZqOr9Vt97OXpGk4R4EhCoOomIzh8qLTnfQ9yMWQngGhRzUhofRt-nntY_uM6kjEykKSsRkw",
+   "results" : [
+      {
+         "formatted_address" : "No: 115 Rosmead Place,, Colombo, Sri Lanka",
+         "geometry" : {
+            "location" : {
+               "lat" : 6.913859,
+               "lng" : 79.874082
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+         "id" : "74f5eaec939d0a73ed51557f5216ddf39992c6bf",
+         "name" : "Zylan Luxury Villa",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "photos" : [
+            {
+               "height" : 681,
+               "html_attributions" : [],
+               "photo_reference" : "CoQBdAAAAHaYujN9ZByk3gC4nbyoClblyGjV_ZF4TqZNJG5zcz-fm1yz-y_tZAjrX1gTQkkheL2QMbNosKevN-ZrHksWIXLO2ZAak2BoK6A4ayvp4dwn2te50j73iVm05IpwtZEQyBeM_mbfyKCvDQlSDNwHNIYrUFQJbnJuxj9yTnOSCFYPEhADXcozt7_c-fQB2t5zt9lcGhRI1zs7E81cYlvMU54-PdtQo-wOag",
+               "width" : 1024
+            }
+         ],
+         "reference" : "CoQBcQAAADVN6zcbqOrWAlobodXMOT118F5f1reUds6dhLP36FD-6SnwNgSNi0Gp02odv1bnqIQ_oU1gMnePaHk-C5tSzs-zHnu5w79RN96bwLIdVXXM8Tu0QvUOtdsKIfqRGfIwIFXSTPlL8kuZkGolCMYpJoiuMDHDRJhNjX7YOUJntkC3EhA4mhgCfNRagaMWDnPACxgaGhSrGM69y-xG4p8dT6BJ_4y8d2R-Jw",
+         "types" : [ "lodging", "establishment" ]
+      },
+      {
+         "formatted_address" : "Kuda Waskaduwa West, Kudawaskaduwa,Waskaduwa, Waskaduwa, Sri Lanka",
+         "geometry" : {
+            "location" : {
+               "lat" : 6.627725,
+               "lng" : 79.941051
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+         "id" : "6b9433b328a759daed04cb04559aa7a9fc1f9e12",
+         "name" : "The Sands By Aitken Spence Hotels",
+         "photos" : [
+            {
+               "height" : 480,
+               "html_attributions" : [
+                  "\u003ca href=\"https://plus.google.com/101049379805121130515\"\u003eNimesha de Silva\u003c/a\u003e"
+               ],
+               "photo_reference" : "CpQBigAAAPdW0fyWwmXk80EuurlprNPfNnjQ8rfi0hUo7ZIkHruI5des-fNGptkISiuys2mNmmS-1Ov3fFsb2YUPTnwbM3niOiWSUPNQx7jc-eFhQIANjwn7QxKapdLCG5tX_4_P4rs-TYZ81DhrM0ySbopfr9yL9bgZrsAZfEeDR1HxoIic9qo0j8Vx_8hYQV5ekCv7thIQjlEoHTefpoyp5bc2x_9bKxoUdbjtH1zPnaWO6cy10n84QAu2FSw",
+               "width" : 640
+            }
+         ],
+         "reference" : "CoQBfwAAAGClo11YnRDuGtJhVR89WqAWuK6Ffh6pyb2C5aUQ00mrtnf90mpoArSXX1NArUJQg0zlSpMfuwS1feChLtxco0iETtqKurr5Y_r7OeLEgNpHI_KfHb0-aYdR7odlWkVmt3GpDWyJ4lg61i7xrSG3ZlXSMLC2qhJKIFP6pjnoVlkLEhBgNdnQs-P2JQ_qYPum82FDGhRO_8ZTy0eTxZiDwtkJBe_XPwxNbQ",
+         "types" : [ "lodging", "establishment" ]
+      },
+      {
+         "formatted_address" : "Annasiwatte Road,Off M.D.H.Jayawardena Mawath, Athurugiriya, Атхуругирия, Sri Lanka",
+         "geometry" : {
+            "location" : {
+               "lat" : 6.888019,
+               "lng" : 79.992313
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+         "id" : "247932296f46fb0607c69fac2ba61533987f780f",
+         "name" : "Field View Holiday Resort Hotel",
+         "reference" : "CoQBfgAAADVA0-_lvV9OgzjXNADxOV_1hsKpvjapb58JjhTiWosTnQxJlijMs7NxkICE47dbXESrVSgPMEsA9t1walCKfquRZuByDHXAsg5RpdsjbGEqyY7cXRxyG7vilqivzjI0GGi9sWhBBrRF0MflFvrFe3NuGzk_XC1wrSKIiNuNK3DuEhDX8gkMiiZnXOg8xHxU0N-9GhTvytYc9zq-mqG9H0DoI9nI2LtnFQ",
+         "types" : [ "lodging", "establishment" ]
+      },
+      {
+         "formatted_address" : "Thalpitiya,Wadduwa 12560, Sri Lanka",
+         "geometry" : {
+            "location" : {
+               "lat" : 6.678152,
+               "lng" : 79.92016700000001
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+         "id" : "f23ee3d4024ce32d96522e8b83ebc854d3cf4f15",
+         "name" : "The Blue Water",
+         "photos" : [
+            {
+               "height" : 960,
+               "html_attributions" : [
+                  "\u003ca href=\"https://plus.google.com/103221534271495892756\"\u003efazeema ibrahim\u003c/a\u003e"
+               ],
+               "photo_reference" : "CnRoAAAAa9m_bwSv1WRhMvIpVSiQZJPpj-i4_VnfZmhD5sc_BAjV8Ps0Pk4yyS1BZIsmeJhiJgHSFoFkIzgWrcBrEFjIqi32Ysce5LIN0IYQAW4EhIBgnHGbUNsFmEHuu104cqvvCFwovhBupPEYuFkpbf60hBIQ90j1p3bV5rF-AsAJvn4CoBoU_BS5IacaRWVbjuBSKi-SkuSb1cs",
+               "width" : 1280
+            }
+         ],
+         "rating" : 4.4,
+         "reference" : "CnRtAAAA0WUZ5kc5-96jfqxw0GP6Ug25L-NpQSUA1IHM9Z3cV3YNZGEFYxWV9Xbrhufqi1zVAtEwt90aAfxmhWs8QStLUmcem1QAuD3VDXpHMRAdgjEK0l7x2PyUTS8KbU7pDCvTiveEbOsZ9i5dWc7qeaJ1uBIQNN6PTbGhGFnhFWqAnbKqiBoUbGsW0oahIxvdits5hg8kVXil8KA",
+         "types" : [ "lodging", "establishment" ]
+      },
+      {
+         "formatted_address" : "Diggalahena Sudharshana Walauwa, Panadura Road, Kiriella Ratnapura, Sri Lanka",
+         "geometry" : {
+            "location" : {
+               "lat" : 6.740943,
+               "lng" : 80.251178
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+         "id" : "10b55bab05e07b91ac9e41d179b1072591263701",
+         "name" : "Hotels in Kiriella Ratnapura Sri Lanka",
+         "photos" : [
+            {
+               "height" : 480,
+               "html_attributions" : [ "From a Google User" ],
+               "photo_reference" : "CpQBgwAAAIX6ZuvwZj-Ca4Tdhl2FmuDih3lB7M7Sy_zMZDEz-6uwoXrYYbmceEQldYv2zYV-Su7od24_vJkg3pOptikkHr-UiTPTryllU4YtZtXUGZV-Md1oJEgCBJq-LebzsGFx0CPwJ9JNkQYwBhWYlTQ7cvYYK4RWTldd4moYY0ua0naCQ53JD6jm6TYDY-H8V1gozRIQuWRj9rb0kXT5BEWf46Cm-BoUvunI16vMJpXmWW7r6iQS7vLUG04",
+               "width" : 640
+            }
+         ],
+         "reference" : "CpQBhQAAAFlGEnl84swrSilyjSoUoLFbgPJqqz9fcDZV286-ZTh5mi3X_E9LW7pCXYCmggtlKJ1AFNZj0GQrgRdjzf6ZPyHATWqoZs3M_JWQ75lL1ytn0GWF-GxK5vtdeeGbsBog6QsFnJssT-F4FsgdP11Rq1yrGfcZs17FvlCaDXfpCxH-dA8Z4giEcZ4-wD5iaAV82RIQxYnzQ_tEODVbk2NtXEw3ghoUXnXphmKQLBDrEyaekezdw8ifDZo",
+         "types" : [ "lodging", "establishment" ]
+      },
+      {
+         "formatted_address" : "Ratnapura, Sri Lanka",
+         "geometry" : {
+            "location" : {
+               "lat" : 6.762787,
+               "lng" : 80.35229200000001
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+         "id" : "916c69defe3617e362e36a7c8e8b706e7d8b9351",
+         "name" : "Lake Serenity Boutique Hotel",
+         "photos" : [
+            {
+               "height" : 780,
+               "html_attributions" : [ "From a Google User" ],
+               "photo_reference" : "CnRjAAAAgK0ObtZ4Xu5385MKVK22cOy1OrQdfWdjWRsT57X01cJX2mEhoq7DuMqbsgkQJuqF3RQM-V_6qS6mSd971smql-FptF-CfqK_pWIX4uuCJAhRMMed8e415cqyo5csoVeVWcTkfEhRT5RcKtnyuyC-qBIQfM_-chZdegoOHLE1pvjw_BoU_FV4q7fOHwpwcs8oq2ZaBjSSO8Q",
+               "width" : 1276
+            }
+         ],
+         "rating" : 3.8,
+         "reference" : "CoQBewAAAA7trl6uvfHaUaHeQLix5dETOyQxLfdEG1bje6ZvfOzX12N36OijezJjcCtqv3T98tTdOMLYJTjX1y6-ccQp6JG6EYUDMkIc2lz9lSHLEmVKuPifwPCRZVbixLHjdADPyf_9sQ801REW1wFvEfh5IV-bZ1AgH30gO_ig10P-HFWJEhBeE5SQhiBRMFfUJIoRPoN3GhS7ft918nsAob98Yb5eLm5Y1XLeJA",
+         "types" : [ "lodging", "establishment" ]
+      },
+      {
+         "formatted_address" : "Avissawella Rd, Avissawella, Sri Lanka",
+         "geometry" : {
+            "location" : {
+               "lat" : 6.886715,
+               "lng" : 80.08808399999999
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "004b0400d9187e4086fed80892e0fb2af52b022e",
+         "name" : "Hotel Ambalama Leisure Lounge",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "reference" : "CoQBfAAAAIDJmwaWwc_587tCcoALPFgPWME0UDhop3dWiYnnPwFIVchuYUZR0JWMoxXSiLfrfT8MUvpmlu089eOZKJEp7xrwqDRwX2kO-RzTJwOPqz5ddh77iRIve6mfB-ozRqWTdDkxJj98OAHVtP6L5rFhdJoF14Z2NbpB4SS5GjdifjDJEhCJAKAHmrfq8talpESFfL3YGhQ-nhxzqPufi0COJVF_rVv3JQ0OLg",
+         "types" : [ "establishment" ]
+      },
+      {
+         "formatted_address" : "Kynsey Rd, Colombo, Sri Lanka",
+         "geometry" : {
+            "location" : {
+               "lat" : 6.910621,
+               "lng" : 79.875851
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/travel_agent-71.png",
+         "id" : "0bd5305c3e88a88babf4cef55bbd548af339c511",
+         "name" : "Shanti Travel",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "reference" : "CnRrAAAA6UZb-4iQkgW-81wJl1ggKC6V9AWi7K9_DWhnb1uLKTuuPWhLqkencLOMmoZRLkFCre19wq21ux5oqvrty2si1zvlacuqapoKO-8Le9e4-KgPWK6vo9gxq-rwnMPk3VpYvXokA5vYQrryzaRHP9scMxIQoXBQGUZi4gWzxzE9vo2GWhoUS-pDfn6ZeZPFmTA7_7PcJz28WTE",
+         "types" : [ "travel_agency", "establishment" ]
+      },
+      {
+         "formatted_address" : "Paradise Pl, Kuruwita, Sri Lanka",
+         "geometry" : {
+            "location" : {
+               "lat" : 6.757442,
+               "lng" : 80.374837
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+         "id" : "0292cac5d70f973736f219f10bc63ab34226f25b",
+         "name" : "Hotels in Ratnapura Sri Lanka",
+         "photos" : [
+            {
+               "height" : 440,
+               "html_attributions" : [],
+               "photo_reference" : "CnRnAAAAwC5LkWwxN-6pRTYtEt7k4oBJBIZL-QBKEcXObFYolDOG0RY8ppYnYR92OFmAyfCkz7EbWuXdlutXBrkXGGKJX4XeAfjXQ7lwvHtYWqDjCkXJNdgLQaqt6Lc8oCNnm7e-jw-j95xeyMoaSv9HJEAiMhIQdlYFZqFpvbpunlhnulj8ExoUh099IdszuGkutZVpfYPbdSE-Sqk",
+               "width" : 965
+            }
+         ],
+         "reference" : "CoQBewAAAHwdqHtAjjmJfROFOsERdX7cSO2E6VkXuJyV-_PPNIhMjMHhyOmQhzUGW7gSkwcklXfsaZ-5hsESJs137xa-O-8KFDamMySrIHqDBgmqZTrEQpOXUWHmDoExZk-w45m3bs4SXizLHrVbBWDUqOe2iVgyrYz42Azp3oCb9vNlrHHPEhA2yl3Z03FRI4v8d9nkY2W5GhTEimiZ59Zvm6h-O3bkdIJH_7ZN2Q",
+         "types" : [ "lodging", "establishment" ]
+      },
+      {
+         "formatted_address" : "536, Kotte Road,, Pitakotte,, Colombo, Sri Lanka",
+         "geometry" : {
+            "location" : {
+               "lat" : 6.889625,
+               "lng" : 79.903347
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "19dac2a0245909a70aefdcc407c05fc0fa92baef",
+         "name" : "Solis Hotel - Wedding Reception Halls - Sri Lanka",
+         "photos" : [
+            {
+               "height" : 94,
+               "html_attributions" : [],
+               "photo_reference" : "CrQBoQAAAFFkLSGPGXnUXL7F7KYGZy7HDvQ0V-BbTScAAYSNJ30AZwYfsoBy-7SblmbpyVpvZMxXRijYhjVKo7ZUUU_wm3paxmaWn7WXwBUXq_d_uAwYtNeZ9_ri91BRD6lb1a3ASGZaBnMfq_vM9QZwfEibGShW_HKTj_0tGZneSArS6AXRFBL9NxB_s40o6eA47v1lPtG22sHEdKLAAE2L_RJ2SfzNw-3ZTELh9cqYMIT30K7jEhCVlRy91CUL4XobDm9ZIPAoGhTSgXOispJ51gn1JDyKSSytFRkX-g",
+               "width" : 86
+            }
+         ],
+         "reference" : "CqQBkQAAADK0MIIdtEIw_GiYLuHNwQH4DZlsW8d4Xnh-zWe9QeyAG6G_7DeOX8KvRbu51SI4pjIkgRLsb73W45nYTrw9Ohhbdn5VBjrtELc8agzOJ3BL4ZrOksOw_lTfIBiDH3fQM3-t-n6OiET7hfQWJJ4puvjqx1sZfj7-P95YCc0QrtTuaJpiEM8U-Lno_t9PWw7VxFAUAtnDPmaLO8qmdoxjhooSEJoeYdp8Xtb0hwbPGus7XZMaFDc6EDeDAD04LkeZ2jB6Z1pYgmFu",
+         "types" : [ "establishment" ]
+      },
+      {
+         "formatted_address" : "No: 46/26, Jetwing House, Navam Mawatha, Colombo 02, Sri Lanka",
+         "geometry" : {
+            "location" : {
+               "lat" : 6.919887,
+               "lng" : 79.85066399999999
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+         "id" : "0abdcbccb73463fb6262d022dd19c9f5d14942af",
+         "name" : "Jetwing Hotels Sri Lanka",
+         "reference" : "CoQBdwAAAM2w_q0smP5hSg_OxwWmljG4N-WG7xhLiLwVpb0fh879cSEKPmX8xfEP06CZwuBWuyIkUcjnvqceOEb7r6tir5FoaA8sg5p9MxWTPxysmkCwfWdXzFhjtkd-NgB482jRs354bXAaYNDXqarvWf9U0HG0dS9E4SN1GPMaSlUqqcomEhBbKPUKf6l59qkg-oSEOMvMGhRK-tLdcVY7O2LX0uf13DVvuuijug",
+         "types" : [ "lodging", "establishment" ]
+      },
+      {
+         "formatted_address" : "De Saram Road, Dehiwala-Mount Lavinia, Sri Lanka",
+         "geometry" : {
+            "location" : {
+               "lat" : 6.839046,
+               "lng" : 79.86485999999999
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+         "id" : "50fd4777713164f95dbab9401e2a45dce95d24ae",
+         "name" : "Beverly Hills Hotels (Pvt) Ltd",
+         "photos" : [
+            {
+               "height" : 949,
+               "html_attributions" : [
+                  "\u003ca href=\"https://plus.google.com/116165375650764978010\"\u003eAditya Jain\u003c/a\u003e"
+               ],
+               "photo_reference" : "CnRoAAAALqYOzD6kYMgIJsCEMvxgtRIarglV8R23gCe6OQKhG66x_QzeFU0ZE7huQM2evfJut5X6TJC7Y6pyDeqAXhz96m5kMMsQatzYJ7xzdSR4nxjN4eK1KxVBMPOvyW1Chcc2tu1_Q5hr13FfZDdNH5r3IRIQVAvln94NAyYrmFQ5LpgSixoUYgx4_aAWDgtBIQZN8uhARUNiUes",
+               "width" : 1265
+            }
+         ],
+         "reference" : "CoQBfQAAADGZfiABDSH8ACdH-sDaOPhxBM_R-xWpSSNCsd2Kvqvt-hVf-q3RcpDCbigPCu_TIcJeRTWLR3xdj3gsNwtwMVWHiDad4U0Gnq99-jcI0rlSZifJvYB0rXJBa7VEtlwChguuE5l2i1G_seZm1JB-bKHMJZ_YVppJK3Bc1kApCa9EEhBSisnP9v6c9RZQPyM9iKbbGhRCmS5MaEZCAhMV_zJjVYoSI_HLzw",
+         "types" : [ "lodging", "establishment" ]
+      },
+      {
+         "formatted_address" : "Hotel Road, Dehiwala-Mount Lavinia, Sri Lanka",
+         "geometry" : {
+            "location" : {
+               "lat" : 6.83315,
+               "lng" : 79.862043
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+         "id" : "6d6e37f795162b22fac72fcb1994ff370f5dd525",
+         "name" : "Mount Lavinia Hotel",
+         "photos" : [
+            {
+               "height" : 720,
+               "html_attributions" : [
+                  "\u003ca href=\"https://plus.google.com/100801052549820403784\"\u003eDasun Tharanga\u003c/a\u003e"
+               ],
+               "photo_reference" : "CnRoAAAAo5F4IjkOG3Cw3ZCa8ekO8doWvKQlllXtunNfC19vPe17oWmMYv6PPdATygQg9LDn6Ozjjb7AXNhj4Ti4AsYdGmGniiK0OdKbaucou9C7Acrd7aLA3cAQZWbG6x5uzd3ph1tZ92oDsXXro7yKu78NThIQTZdnjkrQz3E0hW_kP5yH6BoUx-NQbUxE4GzG8EepTmdJQPr5ROo",
+               "width" : 1280
+            }
+         ],
+         "rating" : 4.3,
+         "reference" : "CoQBcgAAAFwkwPoo3OaL5ZFeJHgkbHnXewrAk83iGQyXViJJYaPWaE2ZZESAcATUTpJwgzt2JL0cIwXePXAS2PcbnO5Yy62lJQQ0lUswcYj8qZiRKCX3JFsfWo3sFw6ah1W3j2Wv4fS49T_-c4NmBJHce6P-YoGpnJCA8Lw5dx_RfaVy2z3aEhB8ssWaFcVjcly88svw2CqNGhTCDrymk86-X6YQw1SHenmRyQj2rg",
+         "types" : [ "lodging", "establishment" ]
+      },
+      {
+         "formatted_address" : "Janadhipathi Mawatha, Colombo 01, Sri Lanka",
+         "geometry" : {
+            "location" : {
+               "lat" : 6.9331,
+               "lng" : 79.84180000000001
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+         "id" : "33162bd85e9eadf31598d5639554171f8b0f2ed8",
+         "name" : "The Kingsbury Hotel",
+         "photos" : [
+            {
+               "height" : 704,
+               "html_attributions" : [],
+               "photo_reference" : "CoQBeAAAAI9brxUMdNGQRxMNFNac9xrwWdnIwnnpThMWq9dr77OL6AS642dZNuZ1PiQT-SBFAEtZE_M3hZW7EpWh1bzfK56CAzqRqi6akd1IOVLi-n17KIoTbEWeeSnPxNNfPa8h-Wg0uG_nEuvI5bshWAVNvL5IF_gU_cImdj5fa1AnPSHwEhAWLQD420LAGjvWDIkRnS3OGhQvVTL2-0Wmk_OcC5z9PVzRUuKnAg",
+               "width" : 960
+            }
+         ],
+         "rating" : 3.8,
+         "reference" : "CoQBcgAAADjdcDximezxucPc30uovKXXtCpm40P3MLN23l-MOgkmBWN0mISWft3rkDFuoXZOq0Cw1Nr75kuYCWYJM5cycqiXx2xwuYOsf-u8i-CnuCUUeViyjZTW3YgEB248jFD6S_LvfEwdhOZQY0GexHqxuDAWwevF9a2x9y-uesa3-cQLEhAHna3xPolrNVPgjFoG_IxXGhQ90Cwd_Hj9Sdhygk6FuPwL39NTxw",
+         "types" : [ "lodging", "establishment" ]
+      },
+      {
+         "formatted_address" : "Glennie Street, Colombo, Sri Lanka",
+         "geometry" : {
+            "location" : {
+               "lat" : 6.924877,
+               "lng" : 79.84715199999999
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+         "id" : "bfbe67ef5e2dc3bc03e1f42ab4d742b57ed5c1f0",
+         "name" : "Keells Hotels Management Services Ltd",
+         "photos" : [
+            {
+               "height" : 720,
+               "html_attributions" : [
+                  "\u003ca href=\"https://plus.google.com/104013395204977606553\"\u003eSaliya Rathnayake\u003c/a\u003e"
+               ],
+               "photo_reference" : "CnRoAAAAnQmAgYKZXOmHoetVuwTZd41JgQSWFapXRu6LbM0z6FNSiMbKz_uurl9fNcGtuzPjQkjjTddTVJeX0ecRjHbJxhJArc_r0EIbGsf-j8XShp-DKgQeAy5ymj3SFvDx__uhS1opy3tGA5ISM8Ne_Q2mVxIQyDQ0VbN3Iq7eUO1UBi8mCxoU2Uf9yVBlxYB5IOtn0uzEBVcnI34",
+               "width" : 1280
+            }
+         ],
+         "reference" : "CpQBgwAAAFn-tA_BgNNc9kRoHAc5xHsUo_JYWHidXmLrjOroSnYL4CwpXwVqyfTbIuTNW0aXw5VNH-W3VvAmsfRu7Vj_5_zVgcBgxHNOZxFBTV79pMwmGUo9HKStJ30WkjyipsPVCr6r6UWReEzFN4Cpy0vj8pnaV-EOhIpfnhQufioOpsqc4W71h3GpU8svBYjoqGTIaxIQ5akvxgg6-kWMs3YkfvOWcRoUWPyebSjekT1dp5yMYC4rNzFpE88",
+         "types" : [ "lodging", "establishment" ]
+      },
+      {
+         "formatted_address" : "23/3,, Padukka Road, Godagama, Sri Lanka",
+         "geometry" : {
+            "location" : {
+               "lat" : 6.848529,
+               "lng" : 80.03518699999999
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+         "id" : "697bd93852c39bf507eedb26d10b9919a14481d8",
+         "name" : "Godagama Rich Hotel",
+         "reference" : "CoQBcQAAAPMDqVyiKxHL5VsdO4Q4SkMop0UT9Pxuem2E80VjyfK8NbkCCbQb3TEa82D1EPVMqZshWQrS36jP8Wf-h4IbaZxrNdvNS4VJeneujPa68RGCC8FhC3JdO3NycactQZojwzyPkvXdm3Wc-fXlvWVBgE9_hufgu6Ry2bmZHVLtayoREhDHIOFuC-mnd8sX8QdmCsn0GhTGR8sSMO7tF0EOPdqleW3ExfX3MQ",
+         "types" : [ "lodging", "establishment" ]
+      },
+      {
+         "formatted_address" : "Lotus Road, Colombo 2, Sri Lanka",
+         "geometry" : {
+            "location" : {
+               "lat" : 6.932188,
+               "lng" : 79.845135
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+         "id" : "aaf2ec4fe7902b0b5f48d29fb89da19d7c7da937",
+         "name" : "Hilton Colombo",
+         "photos" : [
+            {
+               "height" : 738,
+               "html_attributions" : [],
+               "photo_reference" : "CoQBcQAAAGfdqPAMHS1fl680ZPe6uahMQpIf4Zjr0dQO9qU9AAJjXioIZX2dNTs8TlH5mKO7-iPq3XCr3OmgiT7beu7AjMQHyminBWMQByYrFgZIAgbirPDkMCzQVZS6SuYARimXl06Idt2RCsAK14Axqc8wFbiAP5aS0PK5hl_EqrgGrMBoEhAeuD94AxaQV6EHTRzMCXWyGhSZx8KSvyYPCt57mDp0M3NSGLXAGA",
+               "width" : 1034
+            }
+         ],
+         "rating" : 4.2,
+         "reference" : "CnRsAAAAg6QdeTzsoV5jl-BhXzZF44NHAU3QBMazjJixjjJv71QatxRxQB88HMIGrp_7W486tG3Fm9ktJrVvL-rewQX703XQAJ5NBfln-d5YidUOWYMqL4qbWp2YdUK6Alr_tad9cYxdLhXNK3ZhTJNwkmTemxIQssd_hCIiYXhov91pD64bbxoUrQ7Quo2fCo1GXnYFhWx6B-FiJ4M",
+         "types" : [ "lodging", "establishment" ]
+      },
+      {
+         "formatted_address" : "Stewart Street, Colombo, Sri Lanka",
+         "geometry" : {
+            "location" : {
+               "lat" : 6.919683,
+               "lng" : 79.850481
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/travel_agent-71.png",
+         "id" : "8ce60c6efeb92e85da5989d999def896b4df5785",
+         "name" : "Jetwing Hotels",
+         "reference" : "CnRsAAAAciw9wioAYJXLjIhTaWgFd0iNi5ikez6wlWV4-sGfTkcPqX0rVyzPTeHie7GmZ3DCChk13ow8vo_XPmVhnXqU4q_Z3DiGuY7mNN6NkACot9wEcLor1T0J003qbJ_fFfRW5kWuzr2Ioy3boqNVR4yQkRIQtGJm--miqojp4II9m_ZLKRoUFpYvRo_n-d70cDKkthm7bMqCV-0",
+         "types" : [ "travel_agency", "establishment" ]
+      },
+      {
+         "formatted_address" : "A2, Colombo, Sri Lanka",
+         "geometry" : {
+            "location" : {
+               "lat" : 6.920328,
+               "lng" : 79.84613
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+         "id" : "0850877fda5f4fbee9cc5331804a408829739d1a",
+         "name" : "Galle Face Hotel",
+         "photos" : [
+            {
+               "height" : 600,
+               "html_attributions" : [ "From a Google User" ],
+               "photo_reference" : "CoQBcgAAANNa_nVSuegK8aKOp5O647GzoWBLdRD22LbjrarFk-YeTBKcCVzqmnNPECgsfZgqXPvzVxqBIfy4dj6MV_JSlA9cvNcmz5xWrmwnTCwfsnzPfgY2b6NYiZkOMJ3QNu_SxxrLRlXKjx0Xz2OF6PmXy0LkGlyvblze7xcAmbxDPlwbEhAp_WVY-HgGb6lX03GuYpOUGhQK0zHEDLVj8rrmlWunVTx0JArw7w",
+               "width" : 800
+            }
+         ],
+         "rating" : 4.2,
+         "reference" : "CnRuAAAA0s6lUeVq8dapUq6MGzJm8QpRTN77VMoDen8IXEdlw95F4_vIyyF39cn0K0ztG2VptupUEvoRuFYkn8Tt6ThTGqQpluJQNoUazV2Fcx21EkRwGjeXDMCgsl8vhDHS6R4TG5CwOLQFNPeuraiYrrE_8hIQ1gHCwtghFddBsHe77dgxRxoU57jVrFVhDx-7-a7dirT8MddzUPA",
+         "types" : [ "lodging", "establishment" ]
+      },
+      {
+         "formatted_address" : "Level 3, No:33, Canal Row, Colombo, Sri Lanka",
+         "geometry" : {
+            "location" : {
+               "lat" : 6.933326,
+               "lng" : 79.844229
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+         "id" : "d4f097de44a44f0e8965c5af3ca6a29f2b723b09",
+         "name" : "Colombo City Hotel",
+         "photos" : [
+            {
+               "height" : 500,
+               "html_attributions" : [
+                  "\u003ca href=\"https://plus.google.com/103766469251744914630\"\u003eRosh Adhihetty\u003c/a\u003e"
+               ],
+               "photo_reference" : "CoQBcgAAAPHybDUtIgtypIAOxnZpS1-wb3JCT6IXf9qn-h9pGJcKjyietS6UwXc-IQLKA1Gpm5iWJiVEt1d2LTWJkjYuWdTiF8mOdUp4DNbql_kKYndfHVXhbQQ9yZGvc-JMc_OgTeBRIFBGW7g0rqFeD_SoCcfb4677p88A9SyuZRGV8n_cEhA8tPqzpfZcCiJCkcbFiFgkGhT0GpkTIsfF9aQri7UApqS-QFhlow",
+               "width" : 800
+            }
+         ],
+         "rating" : 3.2,
+         "reference" : "CoQBcQAAAP6xC8VZLmAfdClakMN0bapywkJJDmEb_tNWQ_q-M6JNYvf5M088o9ZEHhNU5Miya6HKSm0pehU-eStBAW-nDnE8JVxvwXJ4_SvvueS03_21RS6hsi5yRelxivBI9VN20qYbu7EkokDvpNApri5wyxc5QgeOR1g7CgqB7O5z9g8nEhA-8UlinovZbwavkTEgRUPnGhRRAUssaahawF5ArV7f4wmzidGmMg",
+         "types" : [ "lodging", "establishment" ]
+      }
+   ],
+   "status" : "OK"
+}
