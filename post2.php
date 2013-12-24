@@ -1,16 +1,43 @@
 
 <?php
-
+/**
+ * Copyright 2011 Facebook, Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may
+ * not use this file except in compliance with the License. You may obtain
+ * a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+ * License for the specific language governing permissions and limitations
+ * under the License.
+ */
 
 require 'facebook.php';
+
+// Create our Application instance (replace this with your appId and secret).
 $facebook = new Facebook(array(
   'appId'  => '453545681427596',
   'secret' => '9885617e068739cb01b952b2ab571c01',
 ));
 
-
+// Get User ID
 $user = $facebook->getUser();
 
+// We may or may not have this data based on whether the user is logged in.
+//
+// If we have a $user id here, it means we know the user is logged into
+// Facebook, but we don't know if the access token is valid. An access
+// token is invalid if the user logged out of Facebook.
+
+
+
+// Login or logout url will be needed depending on current user state.
+
+// This call will always work since we are fetching public data.
 $pixelz = $facebook->api('/pixelzcompany');
 
 //Connect to Database
@@ -29,7 +56,21 @@ $dbhandle = mysql_connect($hostname, $username, $password)
 mysql_query("UPDATE `wikilanka`.`database` SET `token`='{$token}' WHERE `mobile`='{$number}'",$dbhandle);
 
 mysql_close($dbhandle);
+$attachment =  array(
+                              'access_token' => $token,
+                              'message' => "message",
+                              'name' => "name",
+                              'description' => "description",
+                              'link' => "link",
+                              'picture' => "pictureUrl",
+                              'actions' => array('name'=>'Try it now', 'link' => "appUrl")
+                          );
 
+                  try{
+                      $post_id = $facebook->api("me/feed","POST",$attachment);
+                   }catch(Exception $e){
+                      error_log($e->getMessage());
+                  }
 
 ?>
 <!DOCTYPE html>
@@ -74,7 +115,11 @@ mysql_close($dbhandle);
     </head>
     
     <body>
-   
+    <?php $id = $_GET['id'];
+		echo $id;
+		echo $number;
+		echo $token;
+		?>
     <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -99,7 +144,10 @@ mysql_close($dbhandle);
 
   };
 
-
+  // Load the SDK's source Asynchronously
+  // Note that the debug version is being actively developed and might 
+  // contain some type checks that are overly strict. 
+  // Please report such bugs using the bugs tool.
   (function(d, debug){
      var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
      if (d.getElementById(id)) {return;}
@@ -124,27 +172,21 @@ mysql_close($dbhandle);
 			</header>
 			
 			<section class="main">
-			  <form class="form-4" action="status2.php">
+			  <form class="form-4">
 		     			      <p align="center" >
 			 <?php if ($user): ?>
    
       <br><p align="center"><img  src="https://graph.facebook.com/<?php echo $user; ?>/picture" width="100" height="100">
     <br>  <?php print_r($user_profile[name]); ?>
 </p>
-	 <br>
       <h3 align="center">You are connected to Facebook<br><br>
-	  <br><br>
-	  <input type="text" class="input" name="status" required="true">
-      <input class = "shareButton" type="submit" value="Update Status" ></h3> 
-	  
+      <input class = "shareButton" type="submit" value="Share Your Place" ></h3> 
     <?php else: ?>
     <?php endif ?>
 			        
           
 			      </p>       
-				</form>	
-	
-</p>			​
+				</form>				​
               <p align="center">
                <h2 align="center" > powered by <br>
               <a href="http://www.pixelzexplorer.org"><img src="images/Logo_Pixelz.png" width="124" height="50" alt="Pixelz" longdesc="http://www.pixelzexplorer.org"></a></h2></p>

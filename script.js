@@ -28,25 +28,5 @@ $('.loginButton').click(function(){
  
 }); //click
 
-$('.shareButton').click(function(){
 
- 
-  FB.api(
-  'me/wikilanka:check_in',
-  'post',
-  {
-    location: "http://www.wikilanka.pixelzexplorer.org/index.php"
-  },
-  function(response) {
-    // handle the response
-	if (!response || response.error){
-		alert(JSON.stringify(response.error));
-		alert("Error Occured");
-	}
-	else
-		alert("Success" + response.id);
-  }
-);
- 
-}); //click
 
