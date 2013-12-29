@@ -9,12 +9,8 @@ $('.loginButton').click(function(){
 	  
 	   if (response.authResponse) {
          console.log('Welcome!  Fetching your information.... ');
-         FB.api('/me', function(response) {
-			  alert('Good to see you, ' + response.name + '.<br> Thank You! for connecting Wiki Lanka with your Facebook account' );
-			  
-      		window.location.replace("http://wikilanka.pixelzexplorer.org/welcome.php?" + window.location.search.replace( "?", "" ));
+		 
          
-          });
         } else {
         console.log('User cancelled login or did not fully authorize.');
        }
@@ -22,7 +18,7 @@ $('.loginButton').click(function(){
       
 
  
-   },{scope: 'publish_actions'},{redirect_uri: 'http://www.pixelzexplorer.org'}); //FB.login
+   }); //FB.login
  
    // END - FACEBOOK LOGIN
  

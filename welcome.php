@@ -13,6 +13,7 @@ $user = $facebook->getUser();
 
 $pixelz = $facebook->api('/pixelzcompany');
 
+
 //Connect to Database
 $number = $_GET['number'];
 $username = "adminpixelz";
@@ -21,14 +22,14 @@ $hostname = "mysql.pixelzexplorer.org";
 
 $token = $facebook->getAccessToken();
  //echo $number."<br>". $token;
-
+//$profile = $facebook->api("/me",'GET');
 //connection to the database
 $dbhandle = mysql_connect($hostname, $username, $password) 
   or die("Unable to connect to MySQL");
   
 mysql_query("UPDATE `wikilanka`.`database` SET `token`='{$token}' WHERE `mobile`='{$number}'",$dbhandle);
+mysql_query("UPDATE `wikilanka`.`database` SET `user`='{$user}' WHERE `mobile`='{$number}'",$dbhandle);
 
-mysql_close($dbhandle);
 
 
 ?>
@@ -86,17 +87,16 @@ mysql_close($dbhandle);
    <div id="fb-root"></div>
 <script>
   window.fbAsyncInit = function() {
-    // init the FB JS SDK
+   
     FB.init({
-      appId      : '453545681427596', // App ID from the App Dashboard
-      channelUrl : '//WWW.YOUR_DOMAIN.COM/channel.html', // Channel File for x-domain communication
+      appId      : '453545681427596', 
+      
       status     : true, // check the login status upon init?
       cookie     : true, // set sessions cookies to allow your server to access the session?
       xfbml      : true  // parse XFBML tags on this page?
     });
 
-    // Additional initialization code such as adding Event Listeners goes here
-
+  
   };
 
 
@@ -124,18 +124,65 @@ mysql_close($dbhandle);
 			</header>
 			
 			<section class="main">
-			  <form class="form-4" action="status2.php">
-		     			      <p align="center" >
+			<p align="center" >
+			  <form class="form-4" action="status.php">
+		     			      
 			 <?php if ($user): ?>
+			 
    
-      <br><p align="center"><img  src="https://graph.facebook.com/<?php echo $user; ?>/picture" width="100" height="100">
-    <br>  <?php print_r($user_profile[name]); ?>
+      <p align="center"><img  src="https://graph.facebook.com/<?php echo $user; ?>/picture?width=9999&height=9999" width="200" height="200">
+    <br>  <?php //echo $profile['name']; ?>
 </p>
 	 <br>
-      <h3 align="center">You are connected to Facebook<br><br>
-	  <br><br>
+      <h4 align="center">You are connected to Facebook</h4><br>
+	  
+	  
+	  <p align="center">Please enter the following PIN Number to your Dialog USSD</p>
+	  <h4 align="center">Your PIN Number:</h4>
+		 <p align="center">
+	  <?php 
+			
+			
+			
+			$query = mysql_query("SELECT PIN FROM `wikilanka`.`database`");
+		
+			$pin = 1;
+			$array=array();
+			$counter=1;
+			while($row = mysql_fetch_array($query))
+			{
+				
+				$array[$counter]=$row['PIN'];
+				//echo $array[$counter];
+				$counter++;
+				
+				
+				
+			}
+				
+				
+				
+			while(array_search($pin,$array)){
+			
+				$pin=rand(1000,9999);
+			};
+			
+			  
+		
+			
+
+
+			echo $pin;	  
+	  
+			mysql_query("UPDATE `wikilanka`.`database` SET `pin`='{$pin}' WHERE `mobile`='{$number}'",$dbhandle);
+			mysql_close($dbhandle);
+	  ?>
+ <p align="center">	  
+	  <br>
 	  <input type="text" class="input" name="status" required="true">
-      <input class = "shareButton" type="submit" value="Update Status" ></h3> 
+	  <input type="text" class="input" name="number" hidden = "true" value = "<?php echo $number ?>">
+      <input class = "shareButton" type="submit" value="Update Status" ><br>
+	  </h3> 
 	  
     <?php else: ?>
     <?php endif ?>
@@ -143,6 +190,7 @@ mysql_close($dbhandle);
           
 			      </p>       
 				</form>	
+				
 	
 </p>			​
               <p align="center">

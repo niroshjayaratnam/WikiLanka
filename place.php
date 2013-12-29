@@ -1,13 +1,53 @@
 
+<?php
+/**
+ * Copyright 2011 Facebook, Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may
+ * not use this file except in compliance with the License. You may obtain
+ * a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+ * License for the specific language governing permissions and limitations
+ * under the License.
+ */
+ $username = "adminpixelz";
+$password = "pixelz313";
+$hostname = "mysql.pixelzexplorer.org"; 
+ $id = $_GET['id'];
+// echo $number;
+
+ $dbhandle = mysql_connect($hostname, $username, $password) 
+  or die("Unable to connect to MySQL");
+  
+  $result = mysql_query("SELECT * FROM `wikilanka`.`places` where `id`='$id'",$dbhandle);
+  
+  $count = 0;
+  $content;
+  
+  while ($row = mysql_fetch_array($result)){
+	 // echo $row['mobile']. " " . $row['ID']. "<br>";
+	  $count = $count + 1;
+	  $content = $row;
+  }
+
+
+  
+  
+
+mysql_close($dbhandle);
+
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
     
-    <meta property="fb:app_id"          content="453545681427596" /> 
-<meta property="og:type"            content="wikilanka:location" /> 
-<meta property="og:url"             content="http://wikilanka.pixelzexplorer.org/index.php" /> 
-<meta property="og:title"           content="Sample Location" /> 
-<meta property="og:image"           content="https://m.ak.fbcdn.net/dragon.ak/hphotos-ak-prn1/851565_496755187057665_544240989_n.jpg" /> 
 
 
 
@@ -16,9 +56,10 @@
 		<meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <title>Wiki Lanka</title>
-        <meta name="description" content="Knowledge hub for tourists in Sri Lanka" />
-        <meta name="author" content="Pixelz" />
+        <title><?php echo $content['name']?></title>
+        <meta name="description" content="<?php echo $content['details'] ?>" />
+        <meta name="keywords" content="css3, login, form, custom, input, submit, button, html5, placeholder" />
+        <meta name="author" content="Codrops" />
         <link rel="shortcut icon" href="../favicon.ico"> 
         <link rel="stylesheet" type="text/css" href="css/style.css" />
 		<script src="js/modernizr.custom.63321.js"></script>
@@ -56,40 +97,26 @@
 			</header>
 			
 			<section class="main">
-			 
-		        <p align="center" >
-	            <p align="center">&nbsp;</p>
-	            <p align="center"><strong><em>You are not Connected.</em></strong><br><br>
-				Please disable pop-up blocking to enable facebook login
-				</p><p align="center">
-				 <form class="form-4" action="home.php">
-				 <br><br>
-   
-	  
-	  
- 
-	  
-	  <input type="text" class="input" name="number" required="true" placeholder = "enter your Mobile Number">
-      <input class = "shareButton" type="submit" value="Connect to Facebook" ><br>
-	 
-	  
-    
-			        
-          
-			         
-				</form>	
-        </p>
+			  
+		        
+	            
+	            <h3 align="center"> <?php echo $content['name']?></h3><br><br>
+				<p align="center" >
+				<img src="<?php echo $content['photo']?>" width="200" height="200" alt="Pixelz" longdesc="http://www.pixelzexplorer.org"><br><br>
+				<?php echo $content['details'] ?>
+        
    
 			        
           
 			      </p>       
-						​
+			  				<br><br><br>
               <p align="center">
                <h2 align="center" > powered by <br>
               <a href="http://www.pixelzexplorer.org"><img src="images/Logo_Pixelz.png" width="124" height="50" alt="Pixelz" longdesc="http://www.pixelzexplorer.org"></a></h2></p>
 			</section>
 			
-        
-
+        </div>
+      
+<script type="text/javascript" src="script.js"></script>
     </body>
 </html>

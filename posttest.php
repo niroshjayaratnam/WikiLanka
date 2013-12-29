@@ -34,7 +34,7 @@ while($row = mysql_fetch_array($result))
 				
 				
 			}
-//echo $user;
+echo $user;
    
   require 'facebook.php';
 
@@ -46,7 +46,7 @@ while($row = mysql_fetch_array($result))
 
   $facebook = new Facebook($config);
   
- // echo $content['thumbnail'];
+  echo $content['thumbnail'];
  
  
 ?>
@@ -77,53 +77,17 @@ while($row = mysql_fetch_array($result))
        
     } else {
 
+      // No user, so print a link for the user to login
+      // To post to a user's wall, we need publish_stream permission
+      // We'll use the current URL as the redirect_uri, so we don't
+      // need to specify it here.
       $login_url = $facebook->getLoginUrl( array( 'scope' => 'publish_stream' ) );
-	  //echo 'Not Working';
-     // echo 'Please <a href="' . $login_url . '">login.</a>';
+	  echo 'Not Working';
+      echo 'Please <a href="' . $login_url . '">login.</a>';
 
     } 
 
   ?>      
-  
-  <div class="container">
-		
-			<!-- Codrops top bar -->
-            <div class="codrops-top"><p align="center">Product of Pixelz</div><!--/ Codrops top bar -->
-			
-			<header>
-			
-				<h1><strong>Wiki Lanka</strong></h1>
-				<h2>Knowledge hub for tourists in Sri Lanka</h2>
-				<div class="support-note">
-					<span class="note-ie">Sorry, only modern browsers.</span>
-				</div>
-				
-			</header>
-			
-			<section class="main">
-			  <form class="form-4" action ="post.php">
-		     			      <p align="center" >
-			 <?php if ($user): ?>
-   
-      <br><p align="center"><img  src="https://graph.facebook.com/<?php echo $user; ?>/picture?width=9999&height=9999" width="200" height="200">
-    <br>  <?php echo($user_profile[name]); ?>
-</p><br><br>
-      <p align="center"><strong><em>Your Place was Posted</em></strong><br><br></p>
-	  <input type="text" class="input" name="id" hidden = "true" value = "1">
-	  <input type="text" class="input" name="number" hidden = "true" value = "<?php echo $number ?>">
-      <input class = "shareButton" type="submit" value="Share Your Place" >
-    <?php else: ?>
-    <?php endif ?>
-			        
-          
-			      </p>       
-				</form>				​
-              <p align="center">
-               <h2 align="center" > powered by <br>
-              <a href="http://www.pixelzexplorer.org"><img src="images/Logo_Pixelz.png" width="124" height="50" alt="Pixelz" longdesc="http://www.pixelzexplorer.org"></a></h2></p>
-			</section>
-			
-        </div>
 
   </body> 
 </html>  

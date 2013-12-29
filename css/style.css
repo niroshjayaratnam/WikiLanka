@@ -607,8 +607,8 @@
 .form-4 {
     /* Size and position */
     width: 300px;
-    margin: 60px auto 30px;
-    padding: 10px;
+    margin: 10px auto 10px;
+    padding: 3px;
     position: relative;
 
     /* Font styles */
@@ -619,7 +619,7 @@
 
 .form-4 h1 {
     font-size: 22px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .form-4 input[type=text],

@@ -15,17 +15,59 @@
  * License for the specific language governing permissions and limitations
  * under the License.
  */
+ $username = "adminpixelz";
+$password = "pixelz313";
+$hostname = "mysql.pixelzexplorer.org"; 
+ $number = $_GET['number'];
+// echo $number;
+
+ $dbhandle = mysql_connect($hostname, $username, $password) 
+  or die("Unable to connect to MySQL");
+  
+  $result = mysql_query("SELECT * FROM `wikilanka`.`database` where `mobile`='$number'",$dbhandle);
+  $token;
+  $user;
+	$count = 0;
+  
+  while ($row = mysql_fetch_array($result)){
+	 // echo $row['mobile']. " " . $row['ID']. "<br>";
+	  $count = $count + 1;
+	  $token = $row['token'];
+	  $user = $row['user'];
+  }
+  if ($count ==  0){
+    mysql_query("INSERT INTO `wikilanka`.`database` (`mobile`,`token`) VALUES ($number,$number)", $dbhandle);
+	//echo "New Record";
+	//echo "<br>". $number;
+	
+	
+	
+         
+}  
+
+else
+  {
+	 // echo $token;
+	 $url='welcome.php?number='.$number.'';
+    echo '<META HTTP-EQUIV=REFRESH CONTENT="1; '.$url.'">';
+	exit;
+	
+	// echo "Updated";	 
+	 
+  }
+  
+  
+
+mysql_close($dbhandle);
 
 require 'facebook.php';
 
 // Create our Application instance (replace this with your appId and secret).
-$config = array(
-    'appId' => '453545681427596',
-    'secret' => '9885617e068739cb01b952b2ab571c01',
-    'allowSignedRequest' => false // optional but should be set to false for non-canvas apps
-  );
+$facebook = new Facebook(array(
+  'appId'  => '453545681427596',
+  'secret' => '9885617e068739cb01b952b2ab571c01',
+));
 
-  $facebook = new Facebook($config);
 // Get User ID
 $user = $facebook->getUser();
 
@@ -37,62 +79,30 @@ $user = $facebook->getUser();
 
 
 
+if ($user) {
+  try {
+    // Proceed knowing you have a logged in user who's authenticated.
+    $user_profile = $facebook->api('/me');
+	$app_profile = $facebook->api('/app');
+	$url='welcome.php?number='.$number.'';
+    echo '<META HTTP-EQUIV=REFRESH CONTENT="1; '.$url.'">';
+	exit;
+  } catch (FacebookApiException $e) {
+    error_log($e);
+	$user = null;
+    
+
+  }
+}
+
+
+
 // Login or logout url will be needed depending on current user state.
 
 // This call will always work since we are fetching public data.
 
+$pixelz = $facebook->api('/pixelzcompany');
 
-//Connect to Database
-$number = $_GET['number'];
-$username = "adminpixelz";
-$password = "pixelz313";
-$hostname = "mysql.pixelzexplorer.org"; 
-
-
-$dbhandle = mysql_connect($hostname, $username, $password) 
-  or die("Unable to connect to MySQL");
-  $count = 0;
-  $content;
-  $token;
-  $user; 
-  $result = mysql_query("SELECT * FROM `wikilanka`.`places` WHERE `id`='{$id}'",$dbhandle);
-  while ($row = mysql_fetch_array($result)){
-	 // echo $row['mobile']. " " . $row['ID']. "<br>";
-	  $count = $count + 1;
-	  $content = $row;
-  }
-	// print_r($content);
-	 $result= mysql_query("SELECT * FROM `wikilanka`.`database` WHERE mobile='{$number}' ",$dbhandle);
-while($row = mysql_fetch_array($result))
-			{
-				
-				$token = $row['token'];
-				$user = $row['user'];
-				
-				
-				
-			}
-
-$status = $_GET['status'];
-
-
-$params = array(
-    'access_token' => $token,
-    'message' => $status
-	
-);
-$url = "https://graph.facebook.com/$user/feed?access_token=$token";
-$ch = curl_init();
-curl_setopt_array($ch, array(
-    CURLOPT_URL => $url,
-    CURLOPT_POSTFIELDS => $params,
-    CURLOPT_RETURNTRANSFER => true,
-    CURLOPT_SSL_VERIFYPEER => false,
-    CURLOPT_VERBOSE => true
-));
-$result = curl_exec($ch);
-//echo $token." - "$user;
-//echo $result;
 
 ?>
 <!DOCTYPE html>
@@ -114,8 +124,7 @@ $result = curl_exec($ch);
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <title>Wiki Lanka</title>
         <meta name="description" content="Knowledge hub for tourists in Sri Lanka" />
-        <meta name="keywords" content="css3, login, form, custom, input, submit, button, html5, placeholder" />
-        <meta name="author" content="Codrops" />
+        <meta name="author" content="Pixelz" />
         <link rel="shortcut icon" href="../favicon.ico"> 
         <link rel="stylesheet" type="text/css" href="css/style.css" />
 		<script src="js/modernizr.custom.63321.js"></script>
@@ -135,10 +144,10 @@ $result = curl_exec($ch);
 			}
 		</style>
     </head>
-    
     <body>
-	
-    
+    <?php $id = $_GET['id'];
+		echo $id;
+		?>
     <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -153,11 +162,27 @@ $result = curl_exec($ch);
     // init the FB JS SDK
     FB.init({
       appId      : '453545681427596', // App ID from the App Dashboard
-      channelUrl : '//WWW.YOUR_DOMAIN.COM/channel.html', // Channel File for x-domain communication
-      status     : true, // check the login status upon init?
+     status     : true, // check the login status upon init?
       cookie     : true, // set sessions cookies to allow your server to access the session?
       xfbml      : true  // parse XFBML tags on this page?
     });
+	
+	 FB.getLoginStatus(function(response) {
+   
+      // stuff you want to happen after login goes here
+	  
+	   if (response.status == "connected") {
+         console.log('Welcome!  Fetching your information.... ');
+		 
+         
+        } else {
+        login();
+       }
+	  
+      
+
+ 
+   }); //FB.login
 
     // Additional initialization code such as adding Event Listeners goes here
 
@@ -174,6 +199,27 @@ $result = curl_exec($ch);
      js.src = "//connect.facebook.net/en_US/all" + (debug ? "/debug" : "") + ".js";
      ref.parentNode.insertBefore(js, ref);
    }(document, /*debug*/ false));
+   function login(){
+    FB.login(function(response) {
+   
+      // stuff you want to happen after login goes here
+	  
+	   if (response.authResponse) {
+         console.log('Welcome!  Fetching your information.... ');
+		 document.write('You are being redirected to Wiki Lanka');
+		 //var numberValue = document.getElementById("number").value;
+		 //window.location = "http://www.wikilanka.pixelzexplorer.org/welcome.php?number=". $numberValue;
+		 location.reload();
+         
+        } else {
+        console.log('User cancelled login or did not fully authorize.');
+       }
+	  
+      
+
+ 
+   });
+}   //FB.login
 </script>
         <div class="container">
 		
@@ -191,23 +237,17 @@ $result = curl_exec($ch);
 			</header>
 			
 			<section class="main">
-			  <form class="form-4" action ="post.php">
-		     			      <p align="center" >
-			 <?php if ($user): ?>
+			  <form class="form-4">
+		        <p align="center" >
+	            <p align="center">&nbsp;</p>
+	            <p align="center"><strong><em>You are not Connected.</em></strong><br><br>
+				Please disable pop-up blocking to enable facebook login
+        </p>
    
-      <br><p align="center"><img  src="https://graph.facebook.com/<?php echo $user; ?>/picture?width=9999&height=9999" width="200" height="200">
-    <br>  <?php echo($user_profile[name]); ?>
-</p><br><br>
-      <p align="center"><strong><em>Your Status was Updated</em></strong><br><br></p>
-	  <input type="text" class="input" name="id" hidden = "true" value = "1">
-	  <input type="text" class="input" name="number" hidden = "true" value = "<?php echo $number ?>">
-      <input class = "shareButton" type="submit" value="Share Your Place" >
-    <?php else: ?>
-    <?php endif ?>
 			        
           
 			      </p>       
-				</form>				​
+			  </form>				​
               <p align="center">
                <h2 align="center" > powered by <br>
               <a href="http://www.pixelzexplorer.org"><img src="images/Logo_Pixelz.png" width="124" height="50" alt="Pixelz" longdesc="http://www.pixelzexplorer.org"></a></h2></p>

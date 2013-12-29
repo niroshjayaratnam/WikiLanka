@@ -42,30 +42,38 @@ $pixelz = $facebook->api('/pixelzcompany');
 
 //Connect to Database
 $number = $_GET['number'];
+$message = $_GET['message'];
 $username = "adminpixelz";
 $password = "pixelz313";
 $hostname = "mysql.pixelzexplorer.org"; 
 
-$token = $facebook->getAccessToken();
- //echo $number."<br>". $token;
+
+
 
 //connection to the database
 $dbhandle = mysql_connect($hostname, $username, $password) 
   or die("Unable to connect to MySQL");
   
-mysql_query("UPDATE `wikilanka`.`database` SET `token`='{$token}' WHERE `mobile`='{$number}'",$dbhandle);
-
+$result= mysql_query("SELECT token FROM `wikilanka`.`database` WHERE mobile='{$number}' AND pin='1'",$dbhandle);
+while($row = mysql_fetch_array($result))
+			{
+				
+				$token = $row['token'];
+				$user = $row['user'];
+				
+				
+			}
+//echo $token;
 mysql_close($dbhandle);
 
 
-$status = $_GET['status'];
 
-$facebook_id = $userdata['id'];
+
 $params = array(
     'access_token' => $token,
-    'message' => $status
+    'message' => $message
 );
-$url = "https://graph.facebook.com/$facebook_id/feed";
+$url = "https://graph.facebook.com/$user/feed";
 $ch = curl_init();
 curl_setopt_array($ch, array(
     CURLOPT_URL => $url,
@@ -75,7 +83,7 @@ curl_setopt_array($ch, array(
     CURLOPT_VERBOSE => true
 ));
 $result = curl_exec($ch);
-echo $result;
+//echo $result;
 
 ?>
 <!DOCTYPE html>
@@ -119,83 +127,5 @@ echo $result;
 		</style>
     </head>
     
-    <body>
-	
-    
-    <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=453545681427596";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-   <div id="fb-root"></div>
-<script>
-  window.fbAsyncInit = function() {
-    // init the FB JS SDK
-    FB.init({
-      appId      : '453545681427596', // App ID from the App Dashboard
-      channelUrl : '//WWW.YOUR_DOMAIN.COM/channel.html', // Channel File for x-domain communication
-      status     : true, // check the login status upon init?
-      cookie     : true, // set sessions cookies to allow your server to access the session?
-      xfbml      : true  // parse XFBML tags on this page?
-    });
-
-    // Additional initialization code such as adding Event Listeners goes here
-
-  };
-
-  // Load the SDK's source Asynchronously
-  // Note that the debug version is being actively developed and might 
-  // contain some type checks that are overly strict. 
-  // Please report such bugs using the bugs tool.
-  (function(d, debug){
-     var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement('script'); js.id = id; js.async = true;
-     js.src = "//connect.facebook.net/en_US/all" + (debug ? "/debug" : "") + ".js";
-     ref.parentNode.insertBefore(js, ref);
-   }(document, /*debug*/ false));
-</script>
-        <div class="container">
-		
-			<!-- Codrops top bar -->
-            <div class="codrops-top"><p align="center">Product of Pixelz</div><!--/ Codrops top bar -->
-			
-			<header>
-			
-				<h1><strong>Wiki Lanka</strong></h1>
-				<h2>Knowledge hub for tourists in Sri Lanka</h2>
-				<div class="support-note">
-					<span class="note-ie">Sorry, only modern browsers.</span>
-				</div>
-				
-			</header>
-			
-			<section class="main">
-			  <form class="form-4">
-		     			      <p align="center" >
-			 <?php if ($user): ?>
-   
-      <br><p align="center"><img  src="https://graph.facebook.com/<?php echo $user; ?>/picture?width=9999&height=9999" width="100" height="100">
-    <br>  <?php print_r($user_profile[name]); ?>
-</p>
-      <h3 align="center">Your Status was Updated<br><br>
-      <input class = "shareButton" type="submit" value="Share Your Place" ></h3> 
-    <?php else: ?>
-    <?php endif ?>
-			        
-          
-			      </p>       
-				</form>				​
-              <p align="center">
-               <h2 align="center" > powered by <br>
-              <a href="http://www.pixelzexplorer.org"><img src="images/Logo_Pixelz.png" width="124" height="50" alt="Pixelz" longdesc="http://www.pixelzexplorer.org"></a></h2></p>
-			</section>
-			
-        </div>
-      
-<script type="text/javascript" src="script.js"></script>
-    </body>
+  
 </html>

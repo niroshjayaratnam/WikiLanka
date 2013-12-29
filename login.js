@@ -9,7 +9,7 @@ $('.loginButton').click(function(){
       FB.api('/me', function(response) {
         
         // stuff you want to happen after getting data goes here
-        alert("hello " +response.name);
+      
         console.log(response);
  
       }); //FB.api
